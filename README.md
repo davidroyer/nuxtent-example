@@ -12,7 +12,7 @@ There's two problems:
  - It is not compatible with the new Nuxt hooks system
  - It is not compatible with the nuxt `generate` mode
 
-The former has been fixed in [this pull request](https://github.com/nuxt-community/nuxtent-module/pull/135) so that's sort.
+The former has been fixed in [this pull request](https://github.com/nuxt-community/nuxtent-module/pull/135) so that's sorted.
 
 The latter is an ongoing issue. Nuxtent does break the nuxt generate. 
 That's a problem for people who (like me) want to generate a static site.
