@@ -8,5 +8,11 @@ module.exports = {
         'get',
         'getAll'
     ]
+  },
+  api: {
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'https://nuxtent.now.sh'
+        : 'http://localhost:3000'
   }
 }
