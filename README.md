@@ -34,11 +34,12 @@ git clone https://github.com/joostdecock/nuxtent-example
 cd nuxtent-module
 yarn install
 yarn build
+yarn link
 
 cd ..
 cd nuxtent-example
 yarn install
-yarn add file:./../nuxtend-module
+yarn link nuxtend-module
 yarn add @nuxtjs/axios
 yarn run dev
 ```
