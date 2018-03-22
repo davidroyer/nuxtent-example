@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="Nuxt.js project" name="description" data-hid="description"><title data-n-head="true">nuxt with nunxtent demo</title><link href="/favicon.ico" rel="icon" data-n-head="true" type="image/x-icon"><link href="/_nuxt/manifest.cbd3ca345d4c4727f824.js" rel="preload" as="script"><link href="/_nuxt/vendor.65de81d62f64dc616a9e.js" rel="preload" as="script"><link href="/_nuxt/app.43fde6afe6af7d40d674.js" rel="preload" as="script"><link href="/_nuxt/layouts/default.ce9dce1a7cbe93068e78.js" rel="preload" as="script"><link href="/_nuxt/pages/blog/_post.940635705e51babe8716.js" rel="preload" as="script"><link href="/_nuxt/pages/index.df74f4c3d023fc6438d1.js" rel="prefetch"><link href="/_nuxt/pages/blog/index.d097bd9b6f1eeb063208.js" rel="prefetch"><style data-vue-ssr-id="538ab288:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style><style data-vue-ssr-id="3f98c7ea:0">html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}*,:after,:before,html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{margin:0}.button--green{display:inline-block;border-radius:4px;border:1px solid #3b8070;color:#3b8070;text-decoration:none;padding:10px 30px}.button--green:hover{color:#fff;background-color:#3b8070}.button--grey{display:inline-block;border-radius:4px;border:1px solid #35495e;color:#35495e;text-decoration:none;padding:10px 30px;margin-left:15px}.button--grey:hover{color:#fff;background-color:#35495e}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div><section class="container"><a href="/" class="nuxt-link-active">Home</a> / 
+    <a href="/blog" class="nuxt-link-active">Blog</a> / 
+    Monthly roundup; October 2017 edition
+  <h1 class="post-title">Monthly roundup - October 2017: Huey, Romy, community building and pattern cover pages </h1><div><p>This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.</p>
+<h2>Looking back at october</h2>
+<p>In retrospect, I should have made the october background image haloween themed.
+I guess I’ll try to remember that for next year.</p>
+<h3>Meet Huey</h3>
+<p>First up: a new pattern. The Huey Hoodie is <a href="/patterns/huey">now available</a> in beta.</p>
+<p>{% include blogfigure.html img=“huey.jpg” caption=“Hi everyone, I am Huey” %}</p>
+<p>Huey is a zip-up hoodie, have a look at <a href="/showcase/pattern/huey">the Huey showcase page</a> for examples.
+<a href="/blog/huey-hoodie-beta/">The announcement blog post</a> also explains what it means for a pattern to be in beta.</p>
+<h3>Community building</h3>
+<p>Freesewing is slowly evolving into a communal effort. The
+<a href="https://gitter.im/freesewing/freesewing">freesewing channel on Gitter</a> is turning
+into a rather chatty place, which is really wonderful to see.</p>
+<p>Furthermore, a number of people are taking a stab at designing their own patterns with
+freesewing. I think that’s very exciting and I’m looking forward to the day we’ll all
+be able to enjoy the fruits of that labour.</p>
+<p>Meanwhile, people are also helping out with the site, suggesting fixes and improvements
+left and right, and <a href="/users/xdpug">Wouter</a> even added an entire page on
+<a href="/docs/git-basics">Git basics</a> which should be a great stepping stone for people who like
+him want to get involved, but lack prior experience with Git (and GitHub).</p>
+<p>Needless to say, I am very appreciative of all contributions big and small.<br>
+If you’d like to get involved, <a href="https://gitter.im/freesewing/freesewing">come say hi</a>.</p>
+<h3>Cover pages for patterns</h3>
+<p>This is something I’m
+<a href="https://www.instagram.com/p/Ba6qVTFDZv_/">kind of excited about</a>:
+but I’ve made
+<a href="https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53">some changes</a>
+to <a href="https://github.com/freesewing/tile">freesewing tile</a> to add a cover page to patterns.</p>
+<p>The tile repository holds software that turns your pattern into multiple pages you can
+print on your printer (so called tiling, hence the name).</p>
+<p>You need to sticky-tape those pages together, and even though there are markings on the pages
+to help you with that, it would be nice to have an overview page that shows the entire pattern
+and how it’s layed out over the different pages.</p>
+<p>Problem is, because freesewing patterns are drafted on the fly, based on your measurements,
+there’s no way to know how big or small your pattern will be. In addition, you can pick a variety
+of paper sizes which will also influence how the pattern gets tiled.</p>
+<p>{% include blogfigure.html img=“tile.jpg” caption=“Turns out, you can add a coverpage is wrestle long enough with PostScript” %}</p>
+<p>So for the longest time, I felt it was simply not possible to add an coverpage with an
+overview of how everything needs to be stuck together. But everyday is a school day, and
+I’m glad to announce that starting of today, when you download a tiled PDF, it will come
+with a cover page detailing the layout.</p>
+<p>This is obviously very new code, so if for some reason you run into trouble with the tiler,
+make sure to <a href="https://github.com/freesewing/tile/issues/new">let me know about it</a>.</p>
+<h3>Romy will design cover images for patterns</h3>
+<p>I’ve made some changes to <a href="/patterns/">the patterns page</a> because I felt that the previous
+layout wasn’t doing the patterns justice.</p>
+<p>While the layout is a bit better now (I think) the pictures are still a bit <em>meh</em> and they
+don’t really say <em>freesewing</em>.</p>
+<p>So, I’ve talked to Dutch illustrator <a href="https://romyvdhel-art.deviantart.com/">Romy Van der Hel</a>
+(who also signed for our measurements illustrations)
+and I’m glad to be able to share with you that she’s agreed to do illustrations for the
+different freesewing patterns.</p>
+<p>Romy will be working on these on and off, but I hope you’ll start to see more of her work
+her relatively soon.</p>
+<h2>Looking ahead to november</h2>
+<p>Last month I said I was working on 5 patterns. One of those (Huey) has been released now
+and these days I’m occupied making a test garment for another pattern on that list: a wintercoat.</p>
+<p>I don’t want to give away too much about this yet, because it’s kind of exciting, but
+I hope to be able to show more of this during the month of november. If for no other
+reason that it’s getting cold and I could really do with a warm coat.</p>
+</div></section></div></div></div><script type="text/javascript">window.__NUXT__={layout:"default",data:[{post:{layout:"blog",title:"Monthly roundup - October 2017: Huey, Romy, community building and pattern cover pages",linktitle:"Monthly roundup; October 2017 edition",img:"potw.jpg",caption:"Your new login background for the month of november",author:"Joost De Cock",category:"roundup",blurb:"A roundup of all the freesewing news of the last month",meta:{index:13,fileName:"2017-10-31-roundup-2017-10.md",section:"/blog",dirName:"/"},date:"2017-10-31",path:"/blog/blog/roundup-2017-10",permalink:"/blog/roundup-2017-10",anchors:[],body:'<p>This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.</p>\n<h2>Looking back at october</h2>\n<p>In retrospect, I should have made the october background image haloween themed.\nI guess I’ll try to remember that for next year.</p>\n<h3>Meet Huey</h3>\n<p>First up: a new pattern. The Huey Hoodie is <a href="/patterns/huey">now available</a> in beta.</p>\n<p>{% include blogfigure.html img=“huey.jpg” caption=“Hi everyone, I am Huey” %}</p>\n<p>Huey is a zip-up hoodie, have a look at <a href="/showcase/pattern/huey">the Huey showcase page</a> for examples.\n<a href="/blog/huey-hoodie-beta/">The announcement blog post</a> also explains what it means for a pattern to be in beta.</p>\n<h3>Community building</h3>\n<p>Freesewing is slowly evolving into a communal effort. The\n<a href="https://gitter.im/freesewing/freesewing">freesewing channel on Gitter</a> is turning\ninto a rather chatty place, which is really wonderful to see.</p>\n<p>Furthermore, a number of people are taking a stab at designing their own patterns with\nfreesewing. I think that’s very exciting and I’m looking forward to the day we’ll all\nbe able to enjoy the fruits of that labour.</p>\n<p>Meanwhile, people are also helping out with the site, suggesting fixes and improvements\nleft and right, and <a href="/users/xdpug">Wouter</a> even added an entire page on\n<a href="/docs/git-basics">Git basics</a> which should be a great stepping stone for people who like\nhim want to get involved, but lack prior experience with Git (and GitHub).</p>\n<p>Needless to say, I am very appreciative of all contributions big and small.<br>\nIf you’d like to get involved, <a href="https://gitter.im/freesewing/freesewing">come say hi</a>.</p>\n<h3>Cover pages for patterns</h3>\n<p>This is something I’m\n<a href="https://www.instagram.com/p/Ba6qVTFDZv_/">kind of excited about</a>:\nbut I’ve made\n<a href="https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53">some changes</a>\nto <a href="https://github.com/freesewing/tile">freesewing tile</a> to add a cover page to patterns.</p>\n<p>The tile repository holds software that turns your pattern into multiple pages you can\nprint on your printer (so called tiling, hence the name).</p>\n<p>You need to sticky-tape those pages together, and even though there are markings on the pages\nto help you with that, it would be nice to have an overview page that shows the entire pattern\nand how it’s layed out over the different pages.</p>\n<p>Problem is, because freesewing patterns are drafted on the fly, based on your measurements,\nthere’s no way to know how big or small your pattern will be. In addition, you can pick a variety\nof paper sizes which will also influence how the pattern gets tiled.</p>\n<p>{% include blogfigure.html img=“tile.jpg” caption=“Turns out, you can add a coverpage is wrestle long enough with PostScript” %}</p>\n<p>So for the longest time, I felt it was simply not possible to add an coverpage with an\noverview of how everything needs to be stuck together. But everyday is a school day, and\nI’m glad to announce that starting of today, when you download a tiled PDF, it will come\nwith a cover page detailing the layout.</p>\n<p>This is obviously very new code, so if for some reason you run into trouble with the tiler,\nmake sure to <a href="https://github.com/freesewing/tile/issues/new">let me know about it</a>.</p>\n<h3>Romy will design cover images for patterns</h3>\n<p>I’ve made some changes to <a href="/patterns/">the patterns page</a> because I felt that the previous\nlayout wasn’t doing the patterns justice.</p>\n<p>While the layout is a bit better now (I think) the pictures are still a bit <em>meh</em> and they\ndon’t really say <em>freesewing</em>.</p>\n<p>So, I’ve talked to Dutch illustrator <a href="https://romyvdhel-art.deviantart.com/">Romy Van der Hel</a>\n(who also signed for our measurements illustrations)\nand I’m glad to be able to share with you that she’s agreed to do illustrations for the\ndifferent freesewing patterns.</p>\n<p>Romy will be working on these on and off, but I hope you’ll start to see more of her work\nher relatively soon.</p>\n<h2>Looking ahead to november</h2>\n<p>Last month I said I was working on 5 patterns. One of those (Huey) has been released now\nand these days I’m occupied making a test garment for another pattern on that list: a wintercoat.</p>\n<p>I don’t want to give away too much about this yet, because it’s kind of exciting, but\nI hope to be able to show more of this during the month of november. If for no other\nreason that it’s getting cold and I could really do with a warm coat.</p>\n'}}],error:null,serverRendered:!0}</script><script defer src="/_nuxt/manifest.cbd3ca345d4c4727f824.js"></script><script defer src="/_nuxt/layouts/default.ce9dce1a7cbe93068e78.js"></script><script defer src="/_nuxt/pages/blog/_post.940635705e51babe8716.js"></script><script defer src="/_nuxt/vendor.65de81d62f64dc616a9e.js"></script><script defer src="/_nuxt/app.43fde6afe6af7d40d674.js"></script>
+  
+

@@ -1,0 +1,21 @@
+{
+  "layout": "blog",
+  "title": "Speed up your pattern design work with our freesewing snippets plugin for vim",
+  "linktitle": "Announcing a freesewing snippets plugin for vim",
+  "img": "train.jpg",
+  "caption": "I do a lot of my design work on the train. Trains are fast. This plugin makes you fast. You get the idea.",
+  "author": "Joost De Cock",
+  "category": "core",
+  "blurb": "Speed up your pattern design work with our clever snippets plugin for the most badass editor known to peoplekind. Bonus: video",
+  "meta": {
+    "index": 1,
+    "fileName": "2018-02-16-core-vim-snippets.md",
+    "section": "/blog",
+    "dirName": "/"
+  },
+  "date": "2018-02-16",
+  "path": "/blog/blog/core-vim-snippets",
+  "permalink": "/blog/core-vim-snippets",
+  "anchors": [],
+  "body": "<p>We have just published the <a href=\"https://github.com/freesewing/core-vim-snippets\">core-vim-scripts</a> repository on GitHub.\nIt holds a plugin for <a href=\"http://www.vim.org/\">the vim editor</a> that adds a bunch  of snippets to speed-up and\nfacilitate your pattern design work.</p>\n<h2>Video sample</h2>\n<p>{% include embed.html src=“<a href=\"https://www.youtube.com/embed/1-JYayZdnpc\">https://www.youtube.com/embed/1-JYayZdnpc</a>” %}</p>\n<h2>What does this do?</h2>\n<p>This plugin adds a list of so-called <em>snippets</em> to vim.\nA snippet is a specific string of text that you can expand to something more elaborate by hitting the <code>&lt;tab&gt;</code> key.</p>\n<p>For example, typing <code>np</code> followed by <code>&lt;tab&gt;</code> will insert the <code>newPoint()</code> method.\nBut that’s not all. Repeatedly hitting <code>&lt;tab&gt;</code> will move your cursor to the different arguments for the method.</p>\n<p>In other words, you can <em>tab through</em> the relevant parts of the code. Futhermore, the plugin will also suggest what needs to go in as an argument, which means it takes the guesswork out of the core API.</p>\n<blockquote>\n<h5>We’ve also updated our cheatsheet</h5>\n<p>We have updated our <a href=\"/pdf/cheatsheet.pdf\">cheatsheet for pattern designers</a> to also include the snippet codes.\n{:.tip}</p>\n</blockquote>\n<h2>But I don’t use vim</h2>\n<p>{%\ninclude floatimgonlarge.html url=&quot;/img/blog/core-vim-snippets/vim.jpg&quot;\ndescription=“vim - It’s not for everyone”\n%}\nIf you use a different editor whith snippet support, feel free to get in touch and we’ll look into porting this functionality to the editor of your choice.</p>\n<p>Or, you can do it yourself, the source code is <a href=\"https://github.com/freesewing/core-vim-snippets\">right here</a>.</p>\n"
+}
