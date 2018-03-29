@@ -10,31 +10,15 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+  import AppLogo from '~/components/AppLogo.vue'
 
-export default {
-  async asyncData({ app, route }) {
-      var posts =  await app.$content('/').getAll();
-      return { posts }
-  },
-  components: {
-    AppLogo
+  export default {
+    async asyncData({ app, route }) {
+        var posts =  await app.$content('/').getAll();
+        return { posts }
+    },
+    components: {
+      AppLogo
+    }
   }
-}
 </script>
-
-<style>
-.container {
-  max-width: 800px;
-  padding: 2rem;
-  margin: 3rem auto;
-  font-size: 140%;
-  line-height: 1.5;
-}
-h1 {
-  margin: 2rem auto;
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 1.1;
-}
-</style>

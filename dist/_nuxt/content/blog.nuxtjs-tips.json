@@ -1,0 +1,31 @@
+{
+  "title": "Tips After Building a Site with Nuxt.js",
+  "tags": [
+    "vue",
+    "nuxt"
+  ],
+  "meta": {
+    "index": 18,
+    "fileName": "2017-09-18-Nuxtjs-Tips.md",
+    "section": "/blog",
+    "dirName": "/"
+  },
+  "date": "2017-09-18",
+  "path": "/blog/blog/nuxtjs-tips",
+  "permalink": "/blog/nuxtjs-tips",
+  "anchors": [
+    [
+      "#tip-1-learn-vuex",
+      "Tip 1 - Learn Vuex"
+    ],
+    [
+      "#tip-2-using-middleware-for-mobile-menus",
+      "Tip 2 - Using Middleware for Mobile Menus"
+    ],
+    [
+      "#tip-3-performance",
+      "Tip 3 - Performance"
+    ]
+  ],
+  "body": "<h1 id=\"tip-1-learn-vuex\">Tip 1 - Learn Vuex</h1>\n<p>I put off on learning Vuex for a long time, and used simpler ways of handling global state. When I took the time to understand Vuex though, it paid off greatly when working with Nuxt.js.</p>\n<hr>\n<h1 id=\"tip-2-using-middleware-for-mobile-menus\">Tip 2 - Using Middleware for Mobile Menus</h1>\n<p>When a link was clicked using the mobile menu, it would stay open instead of closing before transitioning routes. I wanted the menu to close on route change.</p>\n<p>A couple things needed to happen to accomplish this. (<em>Disclaimer: I am using Vuex for state management</em>)</p>\n<ol>\n<li>Use Vuex to keep track of my menu state.</li>\n</ol>\n<pre><code class=\"language-javascript\">state: {\n menuIsActive: false\n},\nmutations: {\n toggleMenuState (state) {\n   state.menuIsActive = !state.menuIsActive\n }\n}\n</code></pre>\n<ol start=\"2\">\n<li>Add a function to the <code>middleware</code> directory. It checks if the menu is active. If so, toggle that state (making it inactive).</li>\n</ol>\n<pre><code class=\"language-javascript\">// This is `middleware/menu.js`\n\nexport default function ({store}) {\n if (store.state.menuIsActive === true) {\n   store.commit('toggleMenuState')\n }\n}\n</code></pre>\n<ol start=\"3\">\n<li>Register this middleware to run when the route changes by adding it inside <code>nuxt.config.js</code>. It is set to <code>menu</code> because our middleware file name is <code>menu.js</code>.</li>\n</ol>\n<pre><code class=\"language-javascript\">router: {\nmiddleware: 'menu'\n}\n</code></pre>\n<hr>\n<h1 id=\"tip-3-performance\">Tip 3 - Performance</h1>\n<p>I personally believe using the <a href=\"https://github.com/nuxt-community/modules/tree/master/modules/pwa\">PWA Module</a> is the easiest modification one can do for the biggest impact on his/her site. While customization is possible, it’s not required. All that’s needed to begin reaping the benefits is adding 1 line to the modules sections of <code>nuxt.config.js</code> like so:</p>\n<pre><code class=\"language-javascript\">// `nuxt.config.js`\n\nmodule.exports = {\n  modules: [\n    '@nuxtjs/pwa'\n  ]\n}\n</code></pre>\n<p>Also, I wanted to use a Google font via CDN but received a performance warning when testing with <a href=\"https://developers.google.com/web/tools/lighthouse/\">Lighthouse</a>. I was able to eliminate the warning by preloading the font in <code>nuxt.config.js</code>.</p>\n<p><strong>Example:</strong></p>\n<pre><code class=\"language-javascript\">// `nuxt.config.js`\n\nmodule.exports = {\n  head: {\n    link: [\n      { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Roboto' }\n    ]\n  }\n}\n</code></pre>\n"
+}

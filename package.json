@@ -15,7 +15,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.1.1",
     "nuxt": "^1.0.0",
-    "nuxtent": "^1.4.1"
+    "nuxtent": "^1.4.1",
+    "prismjs": "^1.13.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

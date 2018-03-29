@@ -8,7 +8,7 @@
   "category": "docs",
   "blurb": "Sometimes we want to know inside a class/pattern whether we are the actual pattern the user wants, or merely a stepping stone to get there.",
   "meta": {
-    "index": 15,
+    "index": 16,
     "fileName": "2017-10-05-where-are-we.md",
     "section": "/blog",
     "dirName": "/"

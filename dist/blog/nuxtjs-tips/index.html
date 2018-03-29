@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-n-head="" data-n-head-ssr>
+  <head>
+    <meta data-n-head="true" charset="utf-8"><meta data-n-head="true" content="width=device-width,initial-scale=1" name="viewport"><meta data-n-head="true" content="Nuxt.js project" name="description" data-hid="description"><title data-n-head="true">nuxt with nunxtent demo</title><link href="/favicon.ico" rel="icon" data-n-head="true" type="image/x-icon"><link href="/_nuxt/manifest.5e4c8470eccc94e32316.js" rel="preload" as="script"><link href="/_nuxt/vendor.65de81d62f64dc616a9e.js" rel="preload" as="script"><link href="/_nuxt/app.6a73f91425d36e810622.js" rel="preload" as="script"><link href="/_nuxt/layouts/default.a54fbd3cf407e646b756.js" rel="preload" as="script"><link href="/_nuxt/pages/blog/_post.13a5cafc60044dda77d7.js" rel="preload" as="script"><link href="/_nuxt/pages/index.33a2fa35f777821aeaa0.js" rel="prefetch"><link href="/_nuxt/pages/blog/index.9387f65c70bae44d8c0a.js" rel="prefetch"><style data-vue-ssr-id="6f792b5c:0">.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;-webkit-transition:width .2s,opacity .4s;transition:width .2s,opacity .4s;opacity:1;background-color:#efc14e;z-index:999999}</style><style data-vue-ssr-id="5c65fd6c:0">html{font-family:Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;word-spacing:1px;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}*,:after,:before,html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{margin:0}.button--green{display:inline-block;border-radius:4px;border:1px solid #3b8070;color:#3b8070;text-decoration:none;padding:10px 30px}.button--green:hover{color:#fff;background-color:#3b8070}.button--grey{display:inline-block;border-radius:4px;border:1px solid #35495e;color:#35495e;text-decoration:none;padding:10px 30px;margin-left:15px}.button--grey:hover{color:#fff;background-color:#35495e}</style>
+  </head>
+  <body data-n-head="">
+    <div id="__nuxt" data-server-rendered="true"><div class="nuxt-progress" style="width:0%;height:2px;background-color:#3b8070;opacity:0"></div><div id="__layout"><div><section class="container"><a href="/" class="nuxt-link-active">Home</a> /
+    <a href="/blog" class="nuxt-link-active">Blog</a> /
+    
+  <h1 class="post-title">Tips After Building a Site with Nuxt.js </h1><div><h1 id="tip-1-learn-vuex">Tip 1 - Learn Vuex</h1>
+<p>I put off on learning Vuex for a long time, and used simpler ways of handling global state. When I took the time to understand Vuex though, it paid off greatly when working with Nuxt.js.</p>
+<hr>
+<h1 id="tip-2-using-middleware-for-mobile-menus">Tip 2 - Using Middleware for Mobile Menus</h1>
+<p>When a link was clicked using the mobile menu, it would stay open instead of closing before transitioning routes. I wanted the menu to close on route change.</p>
+<p>A couple things needed to happen to accomplish this. (<em>Disclaimer: I am using Vuex for state management</em>)</p>
+<ol>
+<li>Use Vuex to keep track of my menu state.</li>
+</ol>
+<pre><code class="language-javascript">state: {
+ menuIsActive: false
+},
+mutations: {
+ toggleMenuState (state) {
+   state.menuIsActive = !state.menuIsActive
+ }
+}
+</code></pre>
+<ol start="2">
+<li>Add a function to the <code>middleware</code> directory. It checks if the menu is active. If so, toggle that state (making it inactive).</li>
+</ol>
+<pre><code class="language-javascript">// This is `middleware/menu.js`
+
+export default function ({store}) {
+ if (store.state.menuIsActive === true) {
+   store.commit('toggleMenuState')
+ }
+}
+</code></pre>
+<ol start="3">
+<li>Register this middleware to run when the route changes by adding it inside <code>nuxt.config.js</code>. It is set to <code>menu</code> because our middleware file name is <code>menu.js</code>.</li>
+</ol>
+<pre><code class="language-javascript">router: {
+middleware: 'menu'
+}
+</code></pre>
+<hr>
+<h1 id="tip-3-performance">Tip 3 - Performance</h1>
+<p>I personally believe using the <a href="https://github.com/nuxt-community/modules/tree/master/modules/pwa">PWA Module</a> is the easiest modification one can do for the biggest impact on his/her site. While customization is possible, it’s not required. All that’s needed to begin reaping the benefits is adding 1 line to the modules sections of <code>nuxt.config.js</code> like so:</p>
+<pre><code class="language-javascript">// `nuxt.config.js`
+
+module.exports = {
+  modules: [
+    '@nuxtjs/pwa'
+  ]
+}
+</code></pre>
+<p>Also, I wanted to use a Google font via CDN but received a performance warning when testing with <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>. I was able to eliminate the warning by preloading the font in <code>nuxt.config.js</code>.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// `nuxt.config.js`
+
+module.exports = {
+  head: {
+    link: [
+      { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Roboto' }
+    ]
+  }
+}
+</code></pre>
+</div></section></div></div></div><script type="text/javascript">window.__NUXT__={layout:"default",data:[{post:{title:"Tips After Building a Site with Nuxt.js",tags:["vue","nuxt"],meta:{index:18,fileName:"2017-09-18-Nuxtjs-Tips.md",section:"/blog",dirName:"/"},date:"2017-09-18",path:"/blog/blog/nuxtjs-tips",permalink:"/blog/nuxtjs-tips",anchors:[["#tip-1-learn-vuex","Tip 1 - Learn Vuex"],["#tip-2-using-middleware-for-mobile-menus","Tip 2 - Using Middleware for Mobile Menus"],["#tip-3-performance","Tip 3 - Performance"]],body:'<h1 id="tip-1-learn-vuex">Tip 1 - Learn Vuex</h1>\n<p>I put off on learning Vuex for a long time, and used simpler ways of handling global state. When I took the time to understand Vuex though, it paid off greatly when working with Nuxt.js.</p>\n<hr>\n<h1 id="tip-2-using-middleware-for-mobile-menus">Tip 2 - Using Middleware for Mobile Menus</h1>\n<p>When a link was clicked using the mobile menu, it would stay open instead of closing before transitioning routes. I wanted the menu to close on route change.</p>\n<p>A couple things needed to happen to accomplish this. (<em>Disclaimer: I am using Vuex for state management</em>)</p>\n<ol>\n<li>Use Vuex to keep track of my menu state.</li>\n</ol>\n<pre><code class="language-javascript">state: {\n menuIsActive: false\n},\nmutations: {\n toggleMenuState (state) {\n   state.menuIsActive = !state.menuIsActive\n }\n}\n</code></pre>\n<ol start="2">\n<li>Add a function to the <code>middleware</code> directory. It checks if the menu is active. If so, toggle that state (making it inactive).</li>\n</ol>\n<pre><code class="language-javascript">// This is `middleware/menu.js`\n\nexport default function ({store}) {\n if (store.state.menuIsActive === true) {\n   store.commit(\'toggleMenuState\')\n }\n}\n</code></pre>\n<ol start="3">\n<li>Register this middleware to run when the route changes by adding it inside <code>nuxt.config.js</code>. It is set to <code>menu</code> because our middleware file name is <code>menu.js</code>.</li>\n</ol>\n<pre><code class="language-javascript">router: {\nmiddleware: \'menu\'\n}\n</code></pre>\n<hr>\n<h1 id="tip-3-performance">Tip 3 - Performance</h1>\n<p>I personally believe using the <a href="https://github.com/nuxt-community/modules/tree/master/modules/pwa">PWA Module</a> is the easiest modification one can do for the biggest impact on his/her site. While customization is possible, it’s not required. All that’s needed to begin reaping the benefits is adding 1 line to the modules sections of <code>nuxt.config.js</code> like so:</p>\n<pre><code class="language-javascript">// `nuxt.config.js`\n\nmodule.exports = {\n  modules: [\n    \'@nuxtjs/pwa\'\n  ]\n}\n</code></pre>\n<p>Also, I wanted to use a Google font via CDN but received a performance warning when testing with <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>. I was able to eliminate the warning by preloading the font in <code>nuxt.config.js</code>.</p>\n<p><strong>Example:</strong></p>\n<pre><code class="language-javascript">// `nuxt.config.js`\n\nmodule.exports = {\n  head: {\n    link: [\n      { rel: \'preload\', as: \'style\', href: \'https://fonts.googleapis.com/css?family=Roboto\' }\n    ]\n  }\n}\n</code></pre>\n'}}],error:null,serverRendered:!0}</script><script defer src="/_nuxt/manifest.5e4c8470eccc94e32316.js"></script><script defer src="/_nuxt/layouts/default.a54fbd3cf407e646b756.js"></script><script defer src="/_nuxt/pages/blog/_post.13a5cafc60044dda77d7.js"></script><script defer src="/_nuxt/vendor.65de81d62f64dc616a9e.js"></script><script defer src="/_nuxt/app.6a73f91425d36e810622.js"></script>
+  
+
