@@ -3,9 +3,9 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _5aa01646 = () => import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */).then(m => m.default || m)
-const _8573bf1a = () => import('../pages/blog/_post.vue' /* webpackChunkName: "pages/blog/_post" */).then(m => m.default || m)
-const _8adcc27e = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _73cce595 = () => import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */).then(m => m.default || m)
+const _531a207c = () => import('../pages/blog/_post.vue' /* webpackChunkName: "pages/blog/_post" */).then(m => m.default || m)
+const _09738bdc = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -67,17 +67,17 @@ export function createRouter () {
     routes: [
 		{
 			path: "/blog",
-			component: _5aa01646,
+			component: _73cce595,
 			name: "blog"
 		},
 		{
 			path: "/blog/:slug",
-			component: _8573bf1a,
+			component: _531a207c,
 			name: "blog-post"
 		},
 		{
 			path: "/",
-			component: _8adcc27e,
+			component: _09738bdc,
 			name: "index"
 		}
     ],

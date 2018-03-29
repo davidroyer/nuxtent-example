@@ -10,9 +10,19 @@ module.exports = {
     ]
   },
   api: {
-    baseURL:
-      process.env.NODE_ENV === 'production'
-        ? 'https://nuxtent.now.sh'
-        : 'http://localhost:3000'
+    baseURL: 'http://localhost:3000',
+    browserBaseURL: 'http://nuxtent-example.netlify.com'
   }
+
+
+
+  // api: function(isStatic) {
+  //   return {
+  //     baseURL:
+  //       process.env.NODE_ENV === 'production'
+  //         ? 'http://nuxtent-example.netlify.com'
+  //         : 'http://localhost:3000',
+  //     browserBaseURL: isStatic ? 'http://nuxtent-example.netlify.com' : ''
+  //   }
+  // }
 }

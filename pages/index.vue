@@ -3,8 +3,8 @@
       <h1>Nuxt + nuxtent</h1>
       <h2>A minimal demo</h2>
       <ul>
-          <li><router-link to="/blog">Blog index</router-link></li> 
-          <li><router-link to="/blog/roundup-2018-02">Sample blog post</router-link></li>
+          <li><nuxt-link to="/blog">Blog index</nuxt-link></li>
+          <li><nuxt-link to="/blog/roundup-2018-02">Sample blog post</nuxt-link></li>
       </ul>
   </section>
 </template>
@@ -13,6 +13,10 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  async asyncData({ app, route }) {
+      var posts =  await app.$content('/').getAll();
+      return { posts }
+  },
   components: {
     AppLogo
   }

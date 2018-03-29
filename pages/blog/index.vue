@@ -1,11 +1,11 @@
 <template>
   <section class="container">
-    <router-link to="/">Home</router-link> / 
+    <nuxt-link to="/">Home</nuxt-link> /
     Blog
         <h1>Blog posts</h1>
         <ul>
             <li v-for="post in posts" :key="post.permalink">
-                <router-link :to="post.permalink">{{ post.linktitle }}</router-link>
+                <nuxt-link :to="post.permalink">{{ post.linktitle }}</nuxt-link>
             </li>
         </ul>
   </section>
@@ -14,9 +14,9 @@
 <script>
 
 export default {
-    asyncData: async function ({ app, route }) {
-        var foo =  await app.$content('/').getAll();
-        return { posts: foo }
-    }
+  async asyncData({ app, route }) {
+    const posts =  await app.$content('/').getAll();
+    return { posts }
+  }
 }
 </script>

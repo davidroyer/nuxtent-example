@@ -1,0 +1,21 @@
+{
+  "layout": "blog",
+  "title": "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?",
+  "linktitle": "The Huey Hoodie is now available in beta",
+  "img": "hoodie.jpg",
+  "caption": "This purple Huey hoodie is the first of its kind. Now it's your turn",
+  "author": "Joost De Cock",
+  "category": "core",
+  "blurb": "Announcing the Huey Hoodie, and an explanation of what it means for a pattern to be in beta.",
+  "meta": {
+    "index": 14,
+    "fileName": "2017-10-21-huey-hoodie-beta.md",
+    "section": "/blog",
+    "dirName": "/"
+  },
+  "date": "2017-10-21",
+  "path": "/blog/blog/huey-hoodie-beta",
+  "permalink": "/blog/huey-hoodie-beta",
+  "anchors": [],
+  "body": "<p>Welcome to <a href=\"/patterns/huey\">Huey</a>, the youngest member in our pattern family.\nHuey is a zip-up hoodie with an (optional) front pouch. I’ve made one for myself – the one in the picture above –\nand I have yet to take it off since.</p>\n<p>Meanwhile, I’ve been wondering why the hell I didn’t design this pattern sooner.\nIt’s just that nice to wear.</p>\n<h2>Available as of now, in beta</h2>\n<p>The pattern is available <a href=\"/patterns/huey\">right here</a>, right now, but it’s in beta.</p>\n<p>To find out what that means – and why I’m doing this – just continue reading.\nBut if you’re itching to make this, here’s is what you need to know about beta status:</p>\n<ul>\n<li>Beta patterns lack documentation</li>\n<li>Beta patterns are made by few people (so far)</li>\n</ul>\n<p>As time goes by and these issues are resolved, Huey will move from beta to core.</p>\n<h2>So why this beta business</h2>\n<p>As I explained in <a href=\"/blog/roundup-2017-09/\">my round-up post of last month</a>, pattern testing is a real bottleneck for me.</p>\n<p>A number of people came forward, offering to help out with testing (thank you very much for that)\nwhich lead me to consider how this would work in practice.</p>\n<p>Like, I’ve got Huey to point of <em>it works for me</em> and I am somewhat confident that it will work for others too.\nStil, nothing replaces a real-world test so it would be nice if a couple of people could make it.</p>\n<p>Rather than given the opportunity to test Huey to a handful of people who came forward, I figured I might as well\nopen it up to everyone who feels so inclined.</p>\n<p>And to indicate that this pattern isn’t as road-tested as the others, I’m keeping it in the beta namespace, where it actually is developed\nand this will also show up on the pattern page. No changes required.</p>\n<h2>Release early, release often</h2>\n<p>Going forward, I will release patterns as soon as I can, and work on completing the documentation while they remain in beta.</p>\n<p>I think it’s a good way to go, and adheres to the <em>release early, release often</em> mantra of open source software.</p>\n<p>If you think that’s a bad idea (or a very good idea), make sure to tell me about it in the comments below.</p>\n"
+}
