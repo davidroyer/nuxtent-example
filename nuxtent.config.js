@@ -28,7 +28,7 @@ module.exports = {
   api: function(isStatic) {
     return {
       baseURL: 'http://localhost:3000',
-      browserBaseURL: isStatic ? 'http://nuxtent-example.netlify.com' : ''
+      browserBaseURL: isStatic ? 'https://nuxtent-example.netlify.com' : ''
     }
   }
 }
