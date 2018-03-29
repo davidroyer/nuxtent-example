@@ -63,4 +63,8 @@ h1 {
   color: #fff;
   background-color: #35495e;
 }
+
+span.token.operator {
+    background: none !important;
+}
 </style>
