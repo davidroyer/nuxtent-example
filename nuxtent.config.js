@@ -11,7 +11,9 @@ module.exports = {
   },
   api: {
     baseURL: 'http://localhost:3000',
-    browserBaseURL: 'http://nuxtent-example.netlify.com'
+    browserBaseURL: process.env.NODE_ENV === 'production'
+            ? 'http://nuxtent-example.netlify.com'
+            : 'http://localhost:3000'
   }
 
 

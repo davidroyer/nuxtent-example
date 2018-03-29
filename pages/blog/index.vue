@@ -5,7 +5,7 @@
         <h1>Blog posts</h1>
         <ul>
             <li v-for="post in posts" :key="post.permalink">
-                <nuxt-link :to="post.permalink">{{ post.linktitle }}</nuxt-link>
+                <nuxt-link :to="post.permalink">{{ post.linktitle || post.title }}</nuxt-link>
             </li>
         </ul>
   </section>
