@@ -10,8 +10,12 @@
 
 <script>
 export default {
-  async asyncData({ app, route }) {
-    return { post: await app.$content('/').get(route.path)}
+  async asyncData({ app, route, payload }) {
+    return { post: (await app.$content("/").get(route.path)) || payload };
   }
-}
+  // asyncData: async ({ app, params, payload, route }) => ({
+  //   post: await app.$content('/blog').get(params.slug) || payload,
+  //   url: `https://www.davidroyer.me${route.fullPath}`
+  // }),
+};
 </script>

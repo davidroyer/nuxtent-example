@@ -1,0 +1,633 @@
+{
+  "publicPath": "/_nuxt/",
+  "all": [
+    "content/blog.roundup-2017-11.json",
+    "pages/index.b8cbe10b1211b170cced.js",
+    "pages/blog/index.9387f65c70bae44d8c0a.js",
+    "pages/blog/_post.bcafb19814d144f769c1.js",
+    "vendor.65de81d62f64dc616a9e.js",
+    "app.75b273df81eb8e65569d.js",
+    "manifest.02d96cb5c671a2d730c1.js",
+    "LICENSES",
+    "content/blog.roundup-2018-02.json",
+    "content/blog.core-vim-snippets.json",
+    "content/blog.gdpr-plan.json",
+    "content/blog.roundup-2018-01.json",
+    "content/blog.announcing-carlita.json",
+    "content/blog.introducing-bail.json",
+    "content/blog.core-v1-3-0-is-out.json",
+    "content/blog.roundup-2017-12.json",
+    "content/blog.announcing-carlton-and-bent.json",
+    "content/blog.calling-all-patrons.json",
+    "content/blog.florent-flat-cap-beta.json",
+    "layouts/default.6b18985b2dd8bcd3deb3.js",
+    "content/blog.benjamin-bow-tie-beta.json",
+    "content/blog.roundup-2017-10.json",
+    "content/blog.huey-hoodie-beta.json",
+    "content/blog.nuxtjs-firebase-auth.json",
+    "content/blog.where-are-we.json",
+    "content/blog.roundup-2017-09.json",
+    "content/blog.nuxtjs-tips.json",
+    "content/blog.freesewing-from-scratch.json",
+    "content/blog.email-spam-problems.json",
+    "content/blog.the-refashioners-2017.json",
+    "content/blog.open-for-business.json",
+    "content/blog.core-v1-1-1-is-out.json",
+    "content/blog.announcing-sven.json",
+    "content/blog.privacy-choices.json",
+    "content/blog.freesewing-goes-jamstack.json",
+    "content/blog.announcing-freesewing.json",
+    "content/_all.json",
+    "index.spa.html",
+    "index.ssr.html"
+  ],
+  "initial": [
+    "manifest.02d96cb5c671a2d730c1.js",
+    "vendor.65de81d62f64dc616a9e.js",
+    "app.75b273df81eb8e65569d.js"
+  ],
+  "async": [
+    "pages/index.b8cbe10b1211b170cced.js",
+    "pages/blog/index.9387f65c70bae44d8c0a.js",
+    "pages/blog/_post.bcafb19814d144f769c1.js",
+    "layouts/default.6b18985b2dd8bcd3deb3.js"
+  ],
+  "modules": {
+    "29456606": [
+      4
+    ],
+    "36529188": [
+      4
+    ],
+    "48490092": [
+      5
+    ],
+    "50175021": [
+      4
+    ],
+    "80095662": [
+      4
+    ],
+    "94810168": [
+      4
+    ],
+    "3cd27fe6": [
+      4
+    ],
+    "69f5b0c3": [
+      4
+    ],
+    "7d688da7": [
+      1
+    ],
+    "3b260633": [
+      4
+    ],
+    "46090d74": [
+      4
+    ],
+    "9b8cda84": [
+      4
+    ],
+    "3950d586": [
+      1
+    ],
+    "99d453b6": [
+      4
+    ],
+    "84e3cf96": [
+      4
+    ],
+    "16fb3c94": [
+      4
+    ],
+    "881ca3a6": [
+      19
+    ],
+    "67f81442": [
+      4
+    ],
+    "1eaf5040": [
+      5
+    ],
+    "a4311e38": [
+      1
+    ],
+    "6eafe2aa": [
+      4
+    ],
+    "196223bf": [
+      4
+    ],
+    "3942dff1": [
+      4
+    ],
+    "3c825512": [
+      4
+    ],
+    "06039ef5": [
+      4
+    ],
+    "efee5c0c": [
+      4
+    ],
+    "214175de": [
+      4
+    ],
+    "67e94256": [
+      5
+    ],
+    "61fca40a": [
+      4
+    ],
+    "04660c56": [
+      4
+    ],
+    "e01433d2": [
+      4
+    ],
+    "104de8cb": [
+      4
+    ],
+    "23b8f8e5": [
+      4
+    ],
+    "346fec41": [
+      4
+    ],
+    "c271c064": [
+      4
+    ],
+    "19eceb21": [
+      4
+    ],
+    "6f8d7b16": [
+      4
+    ],
+    "3a950259": [
+      4
+    ],
+    "f68ba206": [
+      4
+    ],
+    "6623e270": [
+      4
+    ],
+    "6d4e6cc2": [
+      5
+    ],
+    "4f7b79f9": [
+      4
+    ],
+    "383ffc36": [
+      4
+    ],
+    "3d5fc8a4": [
+      4
+    ],
+    "7889b0f4": [
+      4
+    ],
+    "716fe770": [
+      4
+    ],
+    "eda282e0": [
+      19
+    ],
+    "2317d771": [
+      4
+    ],
+    "5f32dffa": [
+      4
+    ],
+    "1858d13e": [
+      4
+    ],
+    "6c422a09": [
+      4
+    ],
+    "47cb0d58": [
+      4
+    ],
+    "28ac0eec": [
+      5
+    ],
+    "784e8258": [
+      4
+    ],
+    "680883f6": [
+      4
+    ],
+    "2be7db80": [
+      4
+    ],
+    "21f51c6a": [
+      4
+    ],
+    "964df918": [
+      5
+    ],
+    "1a9a4854": [
+      4
+    ],
+    "571efbe3": [
+      5
+    ],
+    "10c48a9c": [
+      4
+    ],
+    "9dc55abe": [
+      2
+    ],
+    "24ace7e4": [
+      5
+    ],
+    "54d7f156": [
+      4
+    ],
+    "3604212a": [
+      4
+    ],
+    "8553cb12": [
+      4
+    ],
+    "3772a65f": [
+      4
+    ],
+    "393c0e60": [
+      4
+    ],
+    "003b6b37": [
+      1
+    ],
+    "5f202151": [
+      4
+    ],
+    "6623dce2": [
+      4
+    ],
+    "6c4c5f57": [
+      4
+    ],
+    "19d279fa": [
+      19
+    ],
+    "360bd39b": [
+      4
+    ],
+    "1cd36b89": [
+      4
+    ],
+    "837564f4": [
+      4
+    ],
+    "6a99b42f": [
+      4
+    ],
+    "103b54fa": [
+      1
+    ],
+    "6df4e05c": [
+      1
+    ],
+    "4a389a06": [
+      4
+    ],
+    "bf95131a": [
+      4
+    ],
+    "a6e42a70": [
+      5
+    ],
+    "a15e3fa8": [
+      4
+    ],
+    "ebb656dc": [
+      4
+    ],
+    "4d9198cf": [
+      4
+    ],
+    "fc09cd72": [
+      5
+    ],
+    "01152255": [
+      19
+    ],
+    "59e1b9eb": [
+      4
+    ],
+    "69a70c90": [
+      4
+    ],
+    "46804b0e": [
+      4
+    ],
+    "7c5b671b": [
+      4
+    ],
+    "45a62f6e": [
+      4
+    ],
+    "50b1d97c": [
+      4
+    ],
+    "4120f188": [
+      2
+    ],
+    "10a46356": [
+      4
+    ],
+    "3e68b426": [
+      4
+    ],
+    "48b2cb84": [
+      5
+    ],
+    "759d9c14": [
+      4
+    ],
+    "4eaa20ee": [
+      4
+    ],
+    "aa89d7a6": [
+      4
+    ],
+    "edbe1d42": [
+      4
+    ],
+    "0340a8d8": [
+      4
+    ],
+    "0711900a": [
+      4
+    ],
+    "723f2e3b": [
+      4
+    ],
+    "56d05787": [
+      4
+    ],
+    "367c4484": [
+      5
+    ],
+    "c0a18990": [
+      3
+    ],
+    "4fc5173e": [
+      4
+    ],
+    "6fb0f2ca": [
+      4
+    ],
+    "8f3a8054": [
+      4
+    ],
+    "70bb600c": [
+      5
+    ],
+    "5299fb6e": [
+      5
+    ],
+    "79d7dd00": [
+      4
+    ],
+    "77b1c91c": [
+      4
+    ],
+    "73ea4bed": [
+      4
+    ],
+    "158298d9": [
+      4
+    ],
+    "544bc648": [
+      1
+    ],
+    "dbb6aab6": [
+      5
+    ],
+    "1a634b01": [
+      4
+    ],
+    "1d1086d2": [
+      4
+    ],
+    "7d40647b": [
+      4
+    ],
+    "dd43c090": [
+      5
+    ],
+    "032145ee": [
+      4
+    ],
+    "05d427c9": [
+      4
+    ],
+    "e8d4f86a": [
+      4
+    ],
+    "7736a423": [
+      4
+    ],
+    "b05b715c": [
+      4
+    ],
+    "f5ce0eb6": [
+      4
+    ],
+    "81e91782": [
+      4
+    ],
+    "7826578c": [
+      5
+    ],
+    "057c91f0": [
+      4
+    ],
+    "e5be0f82": [
+      4
+    ],
+    "61c27e50": [
+      4
+    ],
+    "56b32b26": [
+      4
+    ],
+    "fea1b406": [
+      4
+    ],
+    "7251e9bc": [
+      4
+    ],
+    "0196f98c": [
+      4
+    ],
+    "3fc68362": [
+      4
+    ],
+    "3d09310b": [
+      2
+    ],
+    "5d85f462": [
+      4
+    ],
+    "5688743b": [
+      4
+    ],
+    "6d0eecfc": [
+      4
+    ],
+    "3ebc8719": [
+      4
+    ],
+    "13c35cce": [
+      3
+    ],
+    "2eb8e996": [
+      4
+    ],
+    "322a8c20": [
+      4
+    ],
+    "367d9690": [
+      4
+    ],
+    "2595ee00": [
+      4
+    ],
+    "076bab70": [
+      4
+    ],
+    "b52a49e6": [
+      4
+    ],
+    "04599592": [
+      4
+    ],
+    "f17ac114": [
+      4
+    ],
+    "7786e174": [
+      5
+    ],
+    "5113a509": [
+      4
+    ],
+    "4f7041c0": [
+      4
+    ],
+    "39409a16": [
+      4
+    ],
+    "4cb80b30": [
+      4
+    ],
+    "4c95937f": [
+      4
+    ],
+    "01ba446d": [
+      4
+    ],
+    "477ff414": [
+      4
+    ],
+    "3885c68e": [
+      4
+    ],
+    "05cf4dec": [
+      4
+    ],
+    "487be39f": [
+      4
+    ],
+    "c8dd10e0": [
+      5
+    ],
+    "04dc3f0d": [
+      4
+    ],
+    "79d04939": [
+      4
+    ],
+    "2dbde3ad": [
+      5
+    ],
+    "ab97b06a": [
+      4
+    ],
+    "53548ed0": [
+      4
+    ],
+    "308a508e": [
+      3
+    ],
+    "63112af4": [
+      4
+    ],
+    "3761e199": [
+      4
+    ],
+    "345b2c28": [
+      4
+    ],
+    "0d0d6cc1": [
+      4
+    ],
+    "2ea586e5": [
+      4
+    ],
+    "5ee205c8": [
+      4
+    ],
+    "7c6ddfb1": [
+      4
+    ],
+    "2f33dee4": [
+      4
+    ],
+    "3189fb0e": [
+      5
+    ],
+    "0ed9bf46": [
+      5
+    ],
+    "7a0fc920": [
+      4
+    ],
+    "afe330b6": [
+      4
+    ],
+    "6abac58c": [
+      4
+    ],
+    "ac6012bc": [
+      4
+    ],
+    "c821447c": [
+      4
+    ],
+    "631b54c2": [
+      4
+    ],
+    "7ce59652": [
+      4
+    ],
+    "3c0ea4f1": [
+      4
+    ],
+    "c9b1cbc4": [
+      5
+    ],
+    "1475b8cd": [
+      5
+    ],
+    "297adb1e": [
+      4
+    ],
+    "08c5ad89": [
+      5
+    ]
+  }
+}

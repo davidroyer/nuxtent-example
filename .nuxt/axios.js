@@ -110,7 +110,7 @@ export default (ctx, inject) => {
   const axiosOptions = {
     // baseURL
     baseURL : process.browser
-      ? 'http://localhost:3000/content-api'
+      ? 'https://nuxtent-example.netlify.com/_nuxt/content'
       : (process.env._AXIOS_BASE_URL_ || 'http://localhost:3000/content-api'),
 
     // Create fresh objects for all default header scopes
